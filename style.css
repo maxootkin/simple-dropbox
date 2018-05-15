@@ -1,0 +1,152 @@
+/* * {
+	transition: all 0.01s;
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F1F1F1;
+}
+
+.main {
+	width: 100%;
+	height: 100%;	
+}
+
+.main__droparea {
+	margin: 20px;
+	border: 4px dashed #C2D1DD;
+}
+
+.main__droparea_button {
+	color: #C2D1DD;
+	background-color: #F1F1F1;
+	border: none;
+	float: right;
+	margin: 5px;
+}
+
+.main__droparea_elems {	
+	margin: 20px;
+	text-align: center;
+}
+
+.main__droparea_elem {
+	margin: 10px 0;
+	color: rgba(75, 74, 69, 0.7);
+}
+
+.elements__h1 {
+	font-size: 20px;	
+	font-weight: bold;		
+}
+
+.elements__text {
+	font-size: 12px;	
+}
+
+.main__droparea_elem-fu{	
+	display: block;
+	position: relative;
+	overflow: hidden;	
+	margin: 0 auto;
+}
+
+.elements__button {
+	display: block;
+	width: 110px;
+	height: 100%;	
+	margin: auto;
+	background-color: #FAFAFA;
+	padding: 10px;
+	color: rgba(75, 74, 69, 0.7);
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px rgba(67, 133, 247, 0.3),
+			   -1px -1px 1px 1px rgba(67, 133, 247, 0.3);	
+	cursor: pointer;
+	box-sizing: border-box;    
+    text-align: center;
+}
+
+
+.main__droparea_elem-fu input[type=file]{		
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200px;
+}
+
+.main__filearea {
+	margin: 20px;		
+}
+
+.mainfileareafile {	
+	width: 150px;
+	height: 150px;
+	margin: 10px;	
+	display: block;
+	box-shadow: inset 1px 1px 5px 5px #C2D1DD;
+	cursor: move;
+	float: left;
+}
+
+.file__icon {
+	width: 100%;
+	height: 100px;
+	margin: 0;	
+}
+
+.file__title {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color:  rgba(75, 74, 69, 0.7);
+	background-color: #fff;
+	line-height: 15px;
+	word-break: break-all;
+}
+
+.file__icon_plus {
+	padding: 53px 0 0 57px;
+	color: #C2D1DD;
+	font-size: 40px;	
+}
+
+.file__image {
+  	width: inherit;
+  	height: 100px;     
+}
+
+.main__filearea_output {
+
+}
+
+#progress_bar {
+    margin: 0;
+    padding: 3px;    
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+  }
+
+#progress_bar.loading {
+    opacity: 1.0;
+  }
+
+#progress_bar .percent {
+  	color: #fff;
+    background-color: #C2D1DD;
+    height: auto;
+    width: 0;
+  }

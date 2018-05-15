@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+	<script
+      src="http://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+    <script
+      src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+	<script>
+	  $( function() {
+	    $( "#list" ).sortable();
+	    $( "#list" ).disableSelection();
+	  } );
+	</script>
+</head>
+<body draggable="false">
+	<div class="main">
+		<div class="main__droparea">
+			<button class="main__droparea_button"><i class="fas fa-times"></i></button>
+			<div class="main__droparea_elems">
+				<label class="main__droparea_elem main__droparea_elem-fu">
+					<p class="main__droparea_elem elements__h1">Drop files anywhere to upload</p>
+					<p class="main__droparea_elem elements__text">or</p>
+					<span class="elements__button">Select Files</span>					
+					<input type="file" id="files" name="files[]" multiple/>
+					<p class="main__droparea_elem elements__text">Maximum upload file size: 32 MB.</p>
+				</label>
+				<div id="progress_bar"><div class="percent">0%</div></div>	<!-- progress bar -->			
+			</div>
+		</div>
+		<div class="main__filearea">
+			<output id="list" class="main__filearea_output" droppable="true"> 	
+				<!-- вставляем блок с картинкой  -->							
+			</output>
+		</div>
+	</div>	
+	<script src="script.js" type="text/javascript"></script>	
+	<script src="progressbar.js" type="text/javascript"></script>
+	
+</body>
+</html>
